@@ -292,11 +292,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../userguide/" class="md-nav__link">
+      <a href="../techspecs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    User Guide
+    Tech Specs
   </span>
   
 
@@ -361,6 +361,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pinouts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -370,6 +381,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#backplate-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backplate Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backplate Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-backplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      No Backplate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-backplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Backplate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -427,178 +490,506 @@
 
 
 <h1 id="pinouts-and-connectors">Pinouts and Connectors<a class="headerlink" href="#pinouts-and-connectors" title="Permanent link">&para;</a></h1>
-<p>The PWR LED on the left side indicates that the system is powered and running. The STATUS LED is an RGB output indicating the status of the autopilot. Please refer to the autopilot firmware documentation for the meaning of the STATUS LED, e.g. <a href="https://ardupilot.org/rover/docs/common-leds-pixhawk.html#rgb-leds">ArduRover RGB LED documentation</a>. Both LEDs can be deactivated by changing the position of a DIP switch located inside the case. </p>
-<p><a class="glightbox" href="../assets/pinout_long.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Long Side Connectors" src="../assets/pinout_long.png" /></a>
+<h2 id="backplate-configuration">Backplate Configuration<a class="headerlink" href="#backplate-configuration" title="Permanent link">&para;</a></h2>
+<h3 id="no-backplate">No Backplate<a class="headerlink" href="#no-backplate" title="Permanent link">&para;</a></h3>
+<p>The EchoTherm can be used with no backplate attached, in which the user must create or use a commercial thermal module carrier board. The EchoTherm Module is form-factor and pin-compatible with FLIR Boson adapters as long as those adapter use the USB interface.  </p>
+<p>The connector on the back of the EchoTherm is a Hirose DF40C-80DP-0.4V(51) and is designed to be used with the mating connector DF40HC(4.0)-80DS-0.4V(51).</p>
+<p><a class="glightbox" href="../assets/hirose.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Hirose Connector" src="../assets/hirose.png" /></a>
 <center></p>
 <table>
 <thead>
 <tr>
-<th>Connector</th>
-<th>Pins</th>
-<th>Type</th>
-<th>Part Number</th>
-<th>Mating Cable Assembly</th>
-<th>Notes</th>
+<th>Pin Number</th>
+<th>Direction</th>
+<th>Voltage</th>
+<th>Pin Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PWR</td>
+<td>1</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Pwr</td>
+<td>+3.3V</td>
+<td>Power In</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
 <td>4</td>
-<td>M12, A-Code Male</td>
-<td>T4140012041-000</td>
-<td>Tensility 10-03805</td>
-<td>13-36VDC, 4A + supply</td>
+<td>Pwr</td>
+<td>+3.3V</td>
+<td>Power In</td>
 </tr>
 <tr>
-<td>PWM</td>
-<td>12</td>
-<td>M12, A-Code Female</td>
-<td>T4141012121-000</td>
-<td>Custom</td>
-<td></td>
+<td>5</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
 </tr>
 <tr>
-<td>INS</td>
+<td>6</td>
+<td>Pwr</td>
+<td>+3.3V</td>
+<td>Power In</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
 <td>8</td>
-<td>M12, A-Code Female</td>
-<td>T4141012081-000</td>
-<td>Custom</td>
-<td></td>
+<td>Pwr</td>
+<td>+3.3V</td>
+<td>Power In</td>
 </tr>
 <tr>
-<td>IRIDIUM</td>
+<td>9</td>
+<td>IO</td>
+<td>NA</td>
+<td>USB D-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>11</td>
+<td>IO</td>
+<td>NA</td>
+<td>USB D+</td>
+</tr>
+<tr>
 <td>12</td>
-<td>M12, A-Code Female</td>
-<td>T4141012121-000</td>
-<td>Custom</td>
-<td></td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
 </tr>
 <tr>
-<td>FMU CAN</td>
-<td>4</td>
-<td>M12, A-Code Female</td>
-<td>T4141012041-000</td>
-<td>Custom</td>
-<td></td>
+<td>13</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
 </tr>
 <tr>
-<td>NMEA2K</td>
-<td>5</td>
-<td>M12, A-Code Female</td>
-<td>T4141012051-000</td>
-<td>Custom</td>
-<td></td>
+<td>14</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
 </tr>
 <tr>
-<td>ANALOG IN</td>
-<td>5</td>
-<td>M12, D-Code Female</td>
-<td>T4141512051-000</td>
-<td>Custom</td>
-<td></td>
+<td>15</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>16</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>17</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>18</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>21</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>22</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>23</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>24</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>25</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>26</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>27</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>28</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>31</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>32</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>33</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>34</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>35</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>36</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>37</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>38</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>41</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>42</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>43</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>44</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>45</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>46</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>47</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>48</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>51</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>52</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>53</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>54</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>55</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>56</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>57</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>58</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>61</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>62</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>63</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>64</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>65</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>66</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>67</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>68</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>69</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>71</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>72</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>73</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>74</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>75</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>76</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>77</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>78</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Pwr</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>80</td>
+<td>NA</td>
+<td>NA</td>
+<td>NC</td>
 </tr>
 </tbody>
 </table>
 <p></center></p>
-<p><a class="glightbox" href="../assets/pinout_short2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Short Side Comms" src="../assets/pinout_short2.png" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Serial Number 0001 hardware uses different USB pinout, please contact EchoMAV if using Serial Number 0001.</p>
-</div>
-<p><center></p>
-<table>
-<thead>
-<tr>
-<th>Connector</th>
-<th>Pins</th>
-<th>Type</th>
-<th>Part Number</th>
-<th>Mating Cable Assembly</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ETH</td>
-<td>4</td>
-<td>M12, D-Code Female</td>
-<td>T4141512041-000</td>
-<td>ASI-M12-RJ45-11101</td>
-<td>100 Mbps Ethernet to Jetson</td>
-</tr>
-<tr>
-<td>ETH</td>
-<td>4</td>
-<td>M12, D-Code Female</td>
-<td>T4141512041-000</td>
-<td>ASI-M12-RJ45-11101</td>
-<td>100 Mbps Ethernet to Jetson</td>
-</tr>
-<tr>
-<td>USB</td>
-<td>12</td>
-<td>M12, A-Code Female</td>
-<td>T4141012121-000</td>
-<td>Custom</td>
-<td>USB 3 SS to Jetson</td>
-</tr>
-<tr>
-<td>USB</td>
-<td>12</td>
-<td>M12, A-Code Female</td>
-<td>T4141012121-000</td>
-<td>Custom</td>
-<td>USB 3 SS to Jetson</td>
-</tr>
-</tbody>
-</table>
-<p></center></p>
-<p><a class="glightbox" href="../assets/pinout_short_rf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Short Side RF" src="../assets/pinout_short_rf.png" /></a></p>
-<p><center></p>
-<table>
-<thead>
-<tr>
-<th>Connector</th>
-<th>Type</th>
-<th>Part Number</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>H-1</td>
-<td>SMA</td>
-<td>CABLE 385 RF-150-A-2</td>
-<td>Mosaic H, Channel 1</td>
-</tr>
-<tr>
-<td>H-2</td>
-<td>SMA</td>
-<td>CABLE 385 RF-150-A-2</td>
-<td>Mosaic H, Channel 2</td>
-</tr>
-<tr>
-<td>X5</td>
-<td>SMA</td>
-<td>CABLE 385 RF-150-A-2</td>
-<td>Mosaic X5</td>
-</tr>
-<tr>
-<td>CELL1</td>
-<td>SMA</td>
-<td>CABLE 385 RF-150-A-2</td>
-<td>Cellular 1</td>
-</tr>
-<tr>
-<td>CELL2</td>
-<td>SMA</td>
-<td>CABLE 385 RF-150-A-2</td>
-<td>Cellular 2</td>
-</tr>
-</tbody>
-</table>
-<p></center></p>
+<h3 id="usb-backplate">USB Backplate<a class="headerlink" href="#usb-backplate" title="Permanent link">&para;</a></h3>
 
 
 

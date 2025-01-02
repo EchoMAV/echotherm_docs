@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../quickstart/">
-      
-      
-        <link rel="next" href="../hardware/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -289,145 +285,18 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    User Guide
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../techspecs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    User Guide
+    Tech Specs
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-the-jetson-console" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessing the Jetson console
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-the-jetson-via-network" class="md-nav__link">
-    <span class="md-ellipsis">
-      Accessing the Jetson via network
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ip-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      IP Configuration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="IP Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#changing-the-ip-address" class="md-nav__link">
-    <span class="md-ellipsis">
-      Changing the IP Address
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-for-dhcp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuring for DHCP
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-or-changing-the-static-ip-address" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuring or Changing the Static IP Address
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-networkmanager-tips-and-tricks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other NetworkManager tips and tricks
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connecting-to-the-fmu-via-the-usb-connector" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connecting to the FMU via the USB connector
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cellular-modem-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cellular Modem Installation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -550,13 +419,13 @@
 <p>Do not run the Jetson SOM without a heat sink. The lid of the EchoTherm system is the primary heat sink, and running the Jetson with the lid off may result in shut down or throttling. If you need to run the system for a continued period of time with the lid removed, position a fan to move air over the heat spreader installed on the Jetson module.</p>
 </div>
 <p>Open the lid of the EchoTherm system, to expose the inner electronics. 
-<a class="glightbox" href="../assets/inside_box.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Inside Box" src="../assets/inside_box.png" /></a></p>
+<a class="glightbox" href="assets/inside_box.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Inside Box" src="assets/inside_box.png" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A thermal pad is positioned between a heat spreader on the Jetson and the EchoTherm system lid. Please ensure this is in position and undamaged after removing and replacing the lid.</p>
 </div>
 <p>Attach a USB cable between your host computer and J15 (Console) on the EchoPilot AI Board. A USB-C right angle adapter may be useful. Such adapters are included with the hardware or can be obtained <a href="https://a.co/d/0i08W69A">elsewhere</a>.
-<a class="glightbox" href="../assets/usb-to-echopilot-carrier.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Console USB Connection" src="../assets/usb-to-echopilot-carrier.png" /></a></p>
+<a class="glightbox" href="assets/usb-to-echopilot-carrier.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Console USB Connection" src="assets/usb-to-echopilot-carrier.png" /></a></p>
 <p>In step 2, your host computer should have enumerated a virtual comm port. You will now need to find the name of the port.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
