@@ -5,7 +5,7 @@ repo_name: echomav/echotherm_docs
 nav:
     - Overview: overview.md    
     - Quick Start: quickstart.md
-    - User Guide: userguide.md
+    - Tech Specs: techspecs.md
     - Hardware Guide: hardware.md
     - Software Guide: software.md
     - Pinouts: electrical.md
