@@ -1,9 +1,6 @@
 # EchoTherm Overview 
 
-The EchoTherm system offers advanced capabilities for unmanned systems (PX4 and Ardupilot compatible autopilot) combined with embedded computer power (Jetson Orin) and dual/redundant Septentrio H and X5 GNSS systems. The system is packaged in a robust aluminum case which has been designed to IP67 standards. The EchoTherm system is based on the EchoMAV [EchoPilot AI](https://echomav.com/product/echopilot-ai/), please refer to the [EchoPilot AI Documentation](https://echomav.github.io/docs/latest/echopilot_ai/) for information specific to that device.
+The EchoTherm Module is an easy-to-use, NDAA compliant thermal imager proudly made in the US. Designed for low-cost unmanned systems, the 320×240 pixel resolution and 4.0mm focal length provides standoff target detection from up to 330 meters away.  The integrated micro-shutter assembly provides automatic non-uniformity correction. The shutter, combined with onboard image processing, work together to generate extremely low-noise images and videos. EchoMAV’s open-source software suite makes it easy to acquire video and interact with the module (zoom, record, change color palettes and more.) Each module can be integrated tightly into custom hardware via an industry standard footprint/connector, or is compatible with a USB cable using the included adapter.
 
-![Main Vioew0](assets/full_pic.jpg)
+![EchoTherm](assets/echotherm1.png)
 
-## System Diagram/Flowchart
-
-![Flow Chart](assets/flow_chart.png)

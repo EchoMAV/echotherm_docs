@@ -1,6 +1,6 @@
 # EchoTherm Documentation
 
-Welcome to the EchoMAV Technical Library for the EchoTherm system.
+Welcome to the EchoMAV Technical Library for the EchoTherm Module.
 
 <div class="grid cards" markdown>
 
