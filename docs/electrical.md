@@ -99,3 +99,16 @@ The connector on the back of the EchoTherm is a Hirose DF40C-80DP-0.4V(51) and i
 
 ### USB Backplate
 
+The included USB 2.0 adapter board attaches to the Hirose connector above, and provides a JST GH 4 pin connector for USB connectivity. A USB Micro to JST GH adapter is included, but the pinout is provided below if you wish to make a custom cable assembly.
+
+![USB JST Connector](assets/usb.png)
+<center>
+
+| Pin Number | Direction | Voltage | Pin Description    |
+|------------|-----------|---------|-------------------|
+| 1          | Pwr         | +5.0V    | Power In |
+| 2          | IO        | NA     | USB D- |
+| 3          | IO       | NA     | USB D+             |
+| 4          | Pwr         | GND     | GND |
+
+</center>
