@@ -45,14 +45,20 @@
 | Operating Temperature Range| -10°C to 60°C |
 | Storage Temperature Range| -40°C to 80°C |
 | Solar Protection| Yes |
-| Humidity| 10%~95%RH, non-condensing |
+| Humidity| 10%-95%RH, non-condensing |
 | Regulatory| ROHS, WEEE, REACH |
 
 
 ## Video Output and Software               
 | <!-- -->    | <!-- -->    |
-|-------------|-------------|     
-
+|-------------|-------------|  
+| Output Format | V4L |
+| Frame Format | ARGB8888 |
+| Digital Zoom | Yes |
+| Recording (Video) | Yes (host compute device) |
+| Recording (Stills) | Yes (host compute device) |
+| Shutter Control | Yes (automatic or manual) |
+| Color Palette Control | Yes (stock and user-defined) |
 
 
 ## Power Requirements               
