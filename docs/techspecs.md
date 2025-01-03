@@ -8,7 +8,7 @@
 | Spectral Response                | 7.8 - 14 microns                             |
 | Sensor Resolution (Array Format) | 320 (h) x 240 (v)                            |
 | Frame Rate                       | 27 Hz                                        |
-| Imaging Range                    | -40 C to 330 C                               |
+| Imaging Range                    | -40°C to 330°C                               |
 | Sensor Sensitivity               | 65 mK (typical), <100 mK (max) @ 25°C        |
 | Non-Uniformity Correction (NUC)  | Automatic or programmable (internal shutter) |
 
