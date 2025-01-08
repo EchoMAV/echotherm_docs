@@ -1,8 +1,8 @@
 # Mechanical
 
-## 2D Drawing
+## 2D Footprint Drawing
 
-Coming Soon
+- [2D Foot Print](assets/EchoTherm%20Footprint%20Drawing.pdf)
 
 ## STEP File
 
