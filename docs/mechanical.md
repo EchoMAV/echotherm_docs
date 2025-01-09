@@ -6,7 +6,8 @@
 
 ## STEP File
 
-Coming Soon
+- [With USB Back Plate](assets/assembly%20(back%20plate)%20v1.step)
+- [Without USB Back Plate](assets/assembly%20(no%20back%20plate)%20v1.step)
 
 ## Mounting and Vibration Isolation
 
