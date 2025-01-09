@@ -2,7 +2,7 @@
 
 ## 2D Footprint Drawing
 
-- [2D Foot Print](assets/EchoTherm%20Footprint%20Drawing.pdf)
+- [2D Foot Print](assets/ECHOTHERM320.pdf)
 
 ## STEP File
 
