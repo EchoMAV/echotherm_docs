@@ -1,0 +1,3 @@
+[submodule "docs/base_docs"]
+	path = docs/base_docs
+	url = https://github.com/EchoMAV/base_docs.git
